@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado Liebre</title>
+    <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo">
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo Mercado Liebre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+        
+            <p class="text-header"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav class="navbar-header">
+            <ul class="navbar-left">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="navbar-right">
+                <li><a href="/register">Creá tu cuenta <i class="far fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-arrow-right"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>    
+        </div>
+        
+        <section class="banner">
+            <img src="/images/img-home-banner.jpg" alt="Banner">
+        </section>
+    </header>
+
+        <main>
+            <form action="/" method="GET">
+                <div class="campo">
+                    <label for="NombreDeUsuario">Nombre de Usuario:</label>
+                    <input class="input" type="text" name="NombreDeUsuario" id="NombreDeUsuario" required>
+                    <span id="formError"></span>
+                </div>
+                <div class="campo">
+                    <label for="contrasena">Contraseña:</label>
+                    <input class="input" type="password" name="contrasena" id="contrasena" required>
+                    <span id="formError2"></span>
+                </div>
+                
+                <button class="boton-login" type="submit">Enviar</button>
+                
+            </form>
+        </main>
+        <script>
+            var errorSpan = document.getElementById("formError");
+            errorSpan.innerHTML = "* Este campo es obligatorio"
+            var errorSpan = document.getElementById("formError2");
+            errorSpan.innerHTML = "* Este campo es obligatorio"
+        </script>
+    </body>
+</html>

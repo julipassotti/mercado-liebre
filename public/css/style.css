@@ -1,0 +1,423 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+header {
+    background-color: #EAC926;
+}
+
+div.header-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 3%;
+}
+
+header div.logo,
+header div.form {
+    width: 50%;
+}
+
+header div.logo {
+    padding: 5px;
+}
+
+header .form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: none;
+    border-radius: 5px;
+    color: #666;
+    padding: 5px;
+    max-height: 20px;
+    font-size: 11px;
+    overflow: auto;
+}
+
+header .form .submit{
+    background-color: #FFF;
+    border: none;
+    color: #666;
+    font-weight: 50;
+    font-size: 13px;
+    width: 13%;
+    padding: 2.6px;
+    border-radius: 5px;
+}
+
+p.fa-hand-holding-usd {
+    width: 10%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+p.text-header {
+    width: 100%;
+    margin-top: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.headline {
+    font-size: 24px;
+    margin: 10px;
+}
+
+.price {
+    font-size: 18px;
+    flex: 0.3 1 auto;
+}
+
+.discount .description {
+    font-size: 16px;
+}
+
+.description {
+    margin-top: 10px;
+    display: none;
+}
+
+main section article:hover > .product > .description{
+    display:block;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    display:none;
+} 
+
+div.burger-menu {
+    text-align: center;
+}
+
+div.burger-menu i {
+    background-color: #03264C;
+    color: white;
+    font-size: 1.7em;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 5px;
+    width: 40px;
+    border-radius: 10px;
+}
+
+section.banner img {
+    width: 100%;
+}
+
+main{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section article{
+    background-color: #fff;
+    margin: 10px;
+    transition: all 10ms;
+}
+
+article:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article div.product{
+    width: auto;
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
+    position:relative;
+}
+
+main section article div i.fa-truck {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 600ms;
+}
+
+main section article div i.fa-truck:hover {
+    transform: rotateZ(-90deg);
+}
+
+.price-disc {
+    display: flex;
+}
+
+p.discount {
+    color: #39b54a;
+    flex: 0.7 1 auto;
+}
+
+p.description {
+    display:none;
+}
+
+article:hover {
+    cursor: pointer;
+}
+
+.last-visit, .oferts {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+/* formularios de registro y login */
+form {
+    padding: 15px;
+    margin: 30px auto;
+}
+
+form div.campo {
+    margin-bottom: 15px;
+}
+
+div.check-campo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+div.campo label {
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+}
+
+.check-input, .check-label {
+    padding: 3px 8px;
+}
+
+form div input.input {
+    width: 80%;
+    padding: 5px;
+    background: #ebebeb;
+    border: none;
+    border-bottom: 2px solid #666;
+}
+
+#formError, #formError2 {
+    font-size: 12px;
+    display: block;
+    color: red;
+}
+
+.boton, .boton-login {
+    background-color: #1259c3;
+    border: 1px solid #1259c3;
+    border-radius: 8px;
+    font-size: 18px;
+    color: white;
+    padding: 8px;
+    margin: 3px;
+    cursor:pointer;
+}
+
+.boton-login {
+    transition: all 80ms;
+}
+
+.boton-login:hover {
+    background-color: #0022AA;
+
+}
+
+/* footer */
+article.article {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.article #icono {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03264C;
+}
+
+footer p {
+    margin-bottom: 15px;
+}
+
+/* tablet */
+@media (min-width: 361px){
+    div.header-top {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+    
+    .logo, .form {
+        flex-basis: 35%;
+    }
+
+    header .form .submit {
+        width: auto;
+    }
+
+    .text-header {
+        flex-basis: 30%;
+    }
+    
+    p.text-header, .fa-hand-holding-usd {
+        margin: 5px 3px;
+        align-self: left;
+        font-size: 10px;
+    } 
+    
+    nav.navbar-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+
+    nav.navbar-header ul li {
+        font-size: 8.5px;
+        padding: 2px 3px 0;
+    }
+
+    ul.navbar-left, ul.navbar-right {
+        display: flex;
+    }
+
+    main section article .description {
+        display:block;
+    }
+
+    article:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    nav {
+        display:block;
+    }
+
+    div.burger-menu {
+        display:none;
+    }
+
+    .last-visit article,
+    .oferts article {
+        width: 40%;
+    }
+
+    .price, .discount {   
+        font-size: 14px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    #formError, #formError2 {
+        font-size: 15px;
+    }
+
+}
+
+/* desktop */
+@media (min-width: 769px) {
+    .logo {
+        width: 50%;
+        margin: 5px;
+    }
+
+    div.header-top div.form {
+        width: 50%;
+        margin: 12px 8px;
+        align-self: center;
+        font-size: 10px;
+    }
+    
+    p.text-header, .fa-hand-holding-usd {
+        margin: 12px 8px;
+        align-self: center;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+
+    div.form div.input {
+        font-size: 12px;
+        overflow: visible;
+    }
+
+    header .form .submit {
+        width: auto;
+    }
+
+    p.text-header,
+    .fa-hand-holding-usd {
+        font-size: 14px;
+    }
+
+    nav.navbar-header ul li {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .last-visit article,
+    .oferts article {
+        width: 20%;
+    }
+
+    div.art-footer {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
+
+    div.art-footer article.article {
+        align-self: center;
+    }
+
+    .article #icono {
+        transition: all 100ms;
+    }
+
+    #icono:hover {
+        color: #1259c3;
+    }
+}
